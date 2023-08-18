@@ -6,10 +6,11 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   devServer: {
-      statis: './dist',
+      static: './dist',
+      hot: true,
   },
   output: {
-      filename: 'main.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
   },
   module: {
