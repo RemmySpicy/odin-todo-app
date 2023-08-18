@@ -1,5 +1,16 @@
-@use './base';
-@use './abstracts';
-@use './components';
-@use './layout';
-@use './utility';
+@use './abstracts' as *;
+@use './base' as *;
+@use './components' as *;
+@use './layout' as *;
+@use './utility' as *;
+
+body {
+    background-color: $clr-green;
+    padding: $padding-200;
+}
+
+.todo-app {
+    background-color: $clr-light;
+    height: 100%;
+    padding: $padding-100;
+}

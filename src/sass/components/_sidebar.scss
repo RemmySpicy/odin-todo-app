@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.sidebar {
+    background-color: $clr-grey-100;
+    padding: calc($padding-100 / 1.3);
+    width: $sidebar-width;
+    // border-radius: $padding-100;
+    // border: 1px solid black;
+}

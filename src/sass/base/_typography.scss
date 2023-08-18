@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.heading-1 {
+    font-size: $fs-800;
+    font-family: $ff-title;
+}
+
+.heading-2 {
+    font-size: $fs-600;
+    font-family: $ff-title;
+}
+
+.paragraph {
+    font-size: $fs-400;
+    font-family: $ff-body;
+}

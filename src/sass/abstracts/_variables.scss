@@ -1,13 +1,51 @@
-$clr-white: #FAFAFA;
-$clr-dark: #F4F4F4;
-$clr-darker: #EBEBEB;
+// Colors
+$clr-green: #CAD5C6;
+$clr-light: #FAFAFA;
+$clr-grey-100: #F4F4F4;
+$clr-grey-200: #EBEBEB;
+$clr-dark-300: #1c1c1c;
 $clr-yellow: #FFD43B;
 $clr-blue: #67D9E8;
 $clr-orange: #FF6B6B;
 
+// Font Size
 $fs-300: 14px;
 $fs-400: 16px;
 $fs-500: 20px;
 $fs-600: 30px;
 $fs-800: 40px;
 
+// Font family
+$ff-title: sans-serif;
+$ff-body: sans;
+
+// Font Weight
+$fw-400: 400;
+$fw-700: 700;
+$fw-800: 800;
+
+// Padding
+$padding-100: 1rem;
+$padding-200: 2rem;
+
+// Buttons
+$btn-font-size: $fs-300;
+$btn-font-weight: $fw-400;
+$btn-font-family: $ff-body;
+$btn-padding: $padding-100;
+$btn-text-transform: capitalize;
+$btn-border-dark: 1px solid $clr-dark-300;
+$btn-border-radius: 8px;
+
+$btn-pry-hover-background: red;
+$btn-sec-hover-background: blue;
+
+// Container
+$container-max-width: 65rem;
+
+$sidebar-width: 300px;
+// $main-width: ;
+$aside-width: 400px;
+
+// Flex
+$flex-group-gap: 1rem;

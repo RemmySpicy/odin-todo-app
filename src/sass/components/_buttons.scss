@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
+    font-family: $btn-font-family;
+    font-size: $btn-font-size;
+    text-transform: $btn-text-transform;
+    font-weight: $btn-font-weight;
+    padding: $btn-padding;
+    border: none;
+    border-radius: $btn-border-radius;
+    transition: 275ms ease;
+
+    .btn-pry {
+        border: none;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-pry-hover-background;
+        }
+    }
+
+    .btn-sec {
+        border: $btn-border-dark;
+        
+        &:hover,
+        &:focus {
+            background-color: $btn-sec-hover-background;
+        }
+    }
+
+}

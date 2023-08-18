@@ -1,0 +1,44 @@
+@mixin psuedo(
+    $loc: before, 
+    $content: '', 
+    $pos: absolute,
+    $top: 0,
+    $right: 0,
+    $bottom: 0,
+    $left: 0
+    ) {
+    position: relative;
+    
+    &::#{$loc} {
+        content: $content;
+        position: $pos;
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+        @content;
+    }
+}
+
+// For lift animation on items like buttons
+@mixin hover-lift() {
+    transition: transform 100ms ease-in-out;
+    box-shadow: 0 .25em .5em 0 rgb(0 0 0 / .2);
+
+    // can skip variables/options by signifying which to input e.g. $top: 50%
+    @include psuedo(after) {
+        box-shadow: 0 0 1.25em 0 rgb(0 0 0 / .4);
+        transition: transform 100ms ease-in-out;
+        opacity: 0;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+
+        // change to before or after whenever needed
+        &::after {
+            opacity: 1;
+        }
+    }
+}

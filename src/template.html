@@ -6,127 +6,120 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="sidebar">
-        <input type="search" name="" id="">
-
-        <div class="tasks">
-            <h3>Tasks</h3>
-            <div class="today">
-                <i>&tridot;</i>
-                <p>Today</p>
-                <span>2</span>
+    <div class="todo-app flex round">
+        <div class="sidebar border-250">
+            <input type="search" name="" id="">
+            <div class="tasks">
+                <h3>Tasks</h3>
+                <div class="today">
+                    <i>&tridot;</i>
+                    <p>Today</p>
+                    <span>2</span>
+                </div>
+                <div class="upcoming">
+                    <i>&tridot;</i>
+                    <p>Upcoming</p>
+                    <span>3</span>
+                </div>
+                <div class="important">
+                    <i>&tridot;</i>
+                    <p>Important</p>
+                    <span>5</span>
+                </div>
             </div>
-            <div class="upcoming">
-                <i>&tridot;</i>
-                <p>Upcoming</p>
-                <span>3</span>
+            <div class="projects">
+                <h3>Projects</h3>
+                <div class="project-1">
+                    <span></span>
+                    <p>Project 1</p>
+                    <span>3</span>
+                </div>
+                <div class="project-2">
+                    <span></span>
+                    <p>Project 1</p>
+                    <span>3</span>
+                </div>
+                <div class="add-project"></div>
             </div>
-            <div class="important">
-                <i>&tridot;</i>
-                <p>Important</p>
+        </div>
+        <main>
+            <div class="list-title">
+                <h1>Today</h1>
                 <span>5</span>
             </div>
-        </div>
-
-        <div class="projects">
-            <h3>Projects</h3>
-            <div class="project-1">
-                <span></span>
-                <p>Project 1</p>
-                <span>3</span>
+            <div class="add-items">
+                <label for="add-item">
+                    <i>&plus;</i>
+                    <input type="text" name="" id="" placeholder="Add New Task">
+                </label>
             </div>
-            <div class="project-2">
-                <span></span>
-                <p>Project 1</p>
-                <span>3</span>
-            </div>
-            <div class="add-project"></div>
-        </div>
-    </div>    
-
-    <main>
-        <div class="list-title">
-            <h1>Today</h1>
-            <span>5</span>
-        </div>
-
-        <div class="add-items">
-            <label for="add-item">
-                <i>&plus;</i>
-                <input type="text" name="" id="" placeholder="Add New Task">
-            </label>
-        </div>
-
-        <ul class="list-items">
-            <li class="item-1">
-                <i>&circ;</i>
-                <p>Todo item 1</p>
-                <i>&star;</i>
-            </li>
-            <li class="item-2">
-                <i>&circ;</i>
-                <p>Todo item 2</p>
-                <i>&star;</i>
-            </li>
-        </ul>
-        
-        <div class="completed-items">
-            <h3>Completed <span>&leftarrow;</span></h3>
-            <ul>
+            <ul class="list-items">
                 <li class="item-1">
                     <i>&circ;</i>
-                    <p>Completed item 1</p>
+                    <p>Todo item 1</p>
+                    <i>&star;</i>
                 </li>
                 <li class="item-2">
                     <i>&circ;</i>
-                    <p>Completed item 2</p>
+                    <p>Todo item 2</p>
+                    <i>&star;</i>
                 </li>
             </ul>
-        </div>
-    </main>
-
-    <aside>
-        <h2>Task Info:</h2>
-        <textarea name="" id="" cols="30" rows="10">Description</textarea>
         
-        <div class="task-options">
-            <div class="list">
-                <p>List:</p>
-                <select name="list" id="">
-                    <option value="">Project 1</option>
-                    <option value="">Project 2</option>
-                </select>    
+            <div class="completed-items">
+                <h3>Completed <span>&leftarrow;</span></h3>
+                <ul>
+                    <li class="item-1">
+                        <i>&circ;</i>
+                        <p>Completed item 1</p>
+                    </li>
+                    <li class="item-2">
+                        <i>&circ;</i>
+                        <p>Completed item 2</p>
+                    </li>
+                </ul>
             </div>
-            
-            <div class="due-date">
-                <p>Due Date:</p>
-                <select name="due-date" id="due-date">
-                    <option value="today">
-                        <i>&tridot;</i>
-                        <p>Today</p> 
-                        <span>Mon</span>
-                    </option>
-                    <option value="today">
-                        <i>&tridot;</i>
-                        <p>Tomorrow</p>
-                        <span>Tue</span>
-                    </option>
-                    <label for="due-date-picker">
-                        <i>&tridot;</i>
-                        <input type="date" name="" id="">                        
-                    </label>
-                </select>
+        </main>
+        <aside>
+            <h2>Task Info:</h2>
+            <textarea name="" id="" cols="30" rows="10">Description</textarea>
+        
+            <div class="task-options">
+                <div class="list">
+                    <p>List:</p>
+                    <select name="list" id="">
+                        <option value="">Project 1</option>
+                        <option value="">Project 2</option>
+                    </select>
+                </div>
+        
+                <div class="due-date">
+                    <p>Due Date:</p>
+                    <select name="due-date" id="due-date">
+                        <option value="today">
+                            <i>&tridot;</i>
+                            <p>Today</p>
+                            <span>Mon</span>
+                        </option>
+                        <option value="today">
+                            <i>&tridot;</i>
+                            <p>Tomorrow</p>
+                            <span>Tue</span>
+                        </option>
+                        <label for="due-date-picker">
+                            <i>&tridot;</i>
+                            <input type="date" name="" id="">
+                        </label>
+                    </select>
+                </div>
             </div>
-        </div>
-
-        <h2>Subtasks:</h2>
-
-        <p class="create-date">Created on Fri, 15 Aug 2023</p>
-
-        <div class="card-action">
-            <button class="btn-del">Delete Task</button>
-            <button class="btn-save">Save Changes</button>
-        </div>
-    </aside>
+            <h2>Subtasks:</h2>
+            <p class="create-date">Created on Fri, 15 Aug 2023</p>
+            <div class="card-action">
+                <button class="btn-del">Delete Task</button>
+                <button class="btn-save">Save Changes</button>
+            </div>
+        </aside>
+    </div>
 </body>
 </html>
